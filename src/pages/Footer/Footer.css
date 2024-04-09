@@ -1,0 +1,126 @@
+.footer {
+    background-color: ivory;
+    padding: 0px 0px 50px 0px;
+    display: flex;
+    flex-direction: column;
+    color: rgb(112, 112, 112);
+}
+
+.open-hour-container,
+.contact-instantly,
+.contact-on-app {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: rgb(206, 206, 206);
+}
+
+.contact-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 50px;
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.opening,
+.break {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+}
+
+.schedule,
+.contact-us {
+    color: rgb(80, 80, 80);
+}
+
+.contact-info {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-media {
+    padding-top: 5px;
+    color: rgb(112, 112, 112);
+    text-decoration: none;
+}
+
+.footer-end-container {
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.brand {
+    padding-top: 50px;
+    color: rgb(80, 80, 80);
+    font-family: "Great Vibes", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 3rem;
+}
+
+.contact-on-app {
+    display: flex;
+    justify-content: start;
+    gap: 40px;
+}
+
+.ticktok-icon img,
+.xiaohongshu-icon img,
+.wechat-icon img {
+    max-height: 28px;
+    max-width: 28px;
+}
+
+.footer-wrapper {
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 0px 0px 50px 0px;
+    gap: 20px;
+}
+
+@media(min-width:810px) {
+    .footer-wrapper {
+        background-color: rgb(206, 206, 206);
+        flex-direction: row;
+        justify-content: center;
+        padding: 0px 0px 50px 0px;
+        gap: 100px;
+    }
+
+    .open-hour-container {
+        padding: 0;
+    }
+
+    .contact-on-app {
+        padding-top: 50px;
+        display: flex;
+        gap: 50px;
+    }
+
+    .contact-info a {
+        padding-top: 0px;
+    }
+
+    .ticktok-icon img,
+    .xiaohongshu-icon img,
+    .wechat-icon img {
+        max-height: 40px;
+        max-width: 40px;
+    }
+
+    .footer-end-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}

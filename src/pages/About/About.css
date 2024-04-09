@@ -1,0 +1,54 @@
+.about {
+    background-color: rgb(220, 220, 220);
+    padding: 100px 20px 100px 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 30px;
+}
+
+.about-us {
+    color: rgb(167, 154, 77);
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+}
+
+.about-title {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-size: 1.8rem;
+}
+
+.about-content {
+    font-family: "Roboto Serif", serif;
+    font-optical-sizing: auto;
+    font-size: 1.5rem;
+    color: rgb(70, 70, 70);
+}
+
+@media (min-width:810px) {
+    .about-us {
+        font-size: 2rem;
+    }
+
+    .about-title {
+        max-width: 300px;
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        max-width: 800px;
+    }
+
+    .about-wrapper {
+        max-width: 1700px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 50px;
+    }
+}
