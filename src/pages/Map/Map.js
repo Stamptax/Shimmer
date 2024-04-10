@@ -18,6 +18,17 @@ export default function Map({ country, province, city, area }) {
         setInteractive(!interactive);
     }
 
+    useEffect(() => {
+        const gif = document.querySelector('.map-wrapper');
+        function disposeGif() {
+            if (interactive)
+                gif.style.backgroundImage = 'none';
+        }
+        if (interactive) {
+            disposeGif();
+        }
+    }, [interactive]);
+
     return (
         <div className='map' id='map-location'>
             <div className='colour-filler'></div>
