@@ -10,6 +10,7 @@
     width: auto;
     display: flex;
     align-items: center;
+    justify-content: start;
     overflow-x: scroll;
 }
 
@@ -27,6 +28,19 @@
     border-top: 1.5px dashed rgb(105, 105, 105);
     padding-bottom: 50px;
 }
+
+
+.hiddenG {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+}
+
+.showG {
+    opacity: 1;
+    filter: blur(0);
+}
+
 
 @media(min-width:810px) {
     .gallery {

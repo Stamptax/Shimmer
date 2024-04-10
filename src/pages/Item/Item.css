@@ -26,3 +26,31 @@
     object-fit: cover;
     box-shadow: 3px 3px 5px 0px rgb(89, 89, 89);
 }
+
+.hidden {
+    opacity: 0;
+    transition: all 1s;
+    filter: blur(5px);
+    transform: translateY(100%);
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
+
+@media(min-width:810px) {
+    .hidden {
+        opacity: 0;
+        transition: all 1s;
+        filter: blur(5px);
+        transform: translateX(100%);
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
