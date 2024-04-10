@@ -4,7 +4,6 @@ import { useEffect, useState } from 'react';
 export default function Map({ country, province, city, area }) {
     const [windowWidth, setWindowWidth] = useState(window.innerWidth);
     const [interactive, setInteractive] = useState(false)
-    let allowInteraction = false;
     useEffect(() => {
         const handleResize = () => {
             setWindowWidth(window.innerWidth);

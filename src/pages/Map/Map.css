@@ -25,9 +25,13 @@
 }
 
 .map-wrapper {
+    background-color: white;
     margin-top: 100px;
     display: inline-block;
     position: relative;
+    background-image: url('../../../public/resources/loading.gif');
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .map-wrapper::after {
