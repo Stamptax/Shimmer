@@ -8,9 +8,40 @@
     padding: 0 0 100px 0;
 }
 
+.mis-click-preventer::after {
+    font-size: 2rem;
+    color: ivory;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    content: 'Tap to view map';
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
 .map-wrapper {
     margin-top: 100px;
-    box-shadow: 3px 3px 5px 0 rgb(89, 89, 89);
+    display: inline-block;
+    position: relative;
+}
+
+.map-wrapper::after {
+    content: '';
+    font-size: 1.3rem;
+    color: rgb(94, 94, 94);
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    box-shadow: 5px 5px 5px 0 rgba(89, 89, 89, 0.5) inset;
+    pointer-events: none;
 }
 
 .location {
@@ -40,6 +71,5 @@
 
     .map-wrapper {
         margin-top: 200px;
-        box-shadow: 3px 3px 5px 0 rgb(89, 89, 89);
     }
 }
